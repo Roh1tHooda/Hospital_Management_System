@@ -29,11 +29,11 @@ Before you start contributing, please take a moment to read through this guide t
 
 ### Bug Reports
 
-If you encounter a bug or issue, please [open a new issue](https://github.com/Roh1tHooda/hospital-management-system/issues) with a detailed description of the problem. Include information about your environment, steps to reproduce, and any relevant error messages or logs.
+If you encounter a bug or issue, please [open a new issue]([https://github.com/Roh1tHooda/hospital-management-system/issues](https://github.com/Roh1tHooda/Hospital_Management_System/issues)) with a detailed description of the problem. Include information about your environment, steps to reproduce, and any relevant error messages or logs.
 
 ### Feature Requests
 
-If you have a feature request or an idea for improvement, please [open a new issue](https://github.com/Roh1tHooda/hospital-management-system/issues) to discuss it. Clearly describe the feature and its use case.
+If you have a feature request or an idea for improvement, please [open a new issue]([https://github.com/Roh1tHooda/hospital-management-system/issues](https://github.com/Roh1tHooda/Hospital_Management_System/issues)) to discuss it. Clearly describe the feature and its use case.
 
 ### Pull Requests
 

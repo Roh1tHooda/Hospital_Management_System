@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .content {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+    </header>
+    <div class="container">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Patients</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Appointments</a></li>
+        </ul>
+        <div class="content">
+            <h2>Welcome to the Hospital Management System</h2>
+            <div class="form">
+                <h3>Search for Patient</h3>
+                <form>
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" name="patientName" placeholder="Enter patient name">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

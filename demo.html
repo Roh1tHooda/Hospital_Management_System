@@ -1,54 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
- background-color: lightblue;
-}
+  <title>Hospital Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f5f9; /* Set background color to a light blue shade */
+    }
 
-.header {
- background-color: blue;
- color: white;
- padding: 10px;
- text-align: center;
-}
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff; /* Set container background color to white */
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow effect */
+    }
 
-.section {
- background-color: white;
- padding: 10px;
- margin: 5px;
-}
+    h1 {
+      text-align: center;
+      color: #008cba; /* Set heading color to a dark blue shade */
+    }
 
-.footer {
- background-color: blue;
- color: white;
- padding: 10px;
- text-align: center;
-}
-</style>
+    form {
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #008cba; /* Set submit button background color to a dark blue shade */
+      color: white;
+      cursor: pointer;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .table th,
+    .table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .table th {
+      background-color: #008cba; /* Set table header background color to a dark blue shade */
+      color: white;
+    }
+
+    .table tr:hover {
+      background-color: #e6f2f7; /* Set table row hover background color to a lighter blue shade */
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Hospital Management System</h1>
 
-<h2 class="header">Hospital Management System</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Patient Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
 
-<div class="section">
- <h4>Appointment</h4>
- <p>Choose the date and time for your appointment. Fill in the required details. A confirmation mail will be sent to you.</p>
-</div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
 
-<div class="section">
- <h4>Doctor Information</h4>
- <p>Find detailed information about doctors such as specialization, education, and experience. Use the search function to find a specific doctor.</p>
-</div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
 
-<div class="section">
- <h4>Department</h4>
- <p>Choose from various departments and clinics for a comprehensive treatment plan. A variety of diagnostic and treatment options are available.</p>
-</div>
+      <div class="form-group">
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+          <option value="cardiology">Cardiology</option>
+          <option value="neurology">Neurology</option>
+          <option value="orthopedics">Orthopedics</option>
+          <option value="pediatrics">Pediatrics</option>
+        </select>
+      </div>
 
-<div class="footer">
- <p>Footer content here</p>
-</div>
+      <div class="form-group">
+        <input type="submit" value="Add Patient">
+      </div>
+    </form>
 
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Patient Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vansh</td>
+          <td>19</td>
+          <td>Male</td>
+          <td>Cardiology</td>
+        </tr>
+        <tr>
+          <td>Rohit</td>
+          <td>19</td>
+          <td>Male</td>
+          <td>Neurology</td>
+        </tr>
+        <!-- Add more rows dynamically using JavaScript -->
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
